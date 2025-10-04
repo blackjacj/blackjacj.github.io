@@ -1,0 +1,332 @@
+:root {
+    --midnightblue-color: #003B6D;
+    --skyblue-color: #6699CC;
+    --dimgrey-color: #676767;
+    --silver-color: #BDBDBD;
+}
+
+body {
+    background-color: #F2F2F2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.menubar {
+    background-color: darkgoldenrod;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#taniti a{
+    text-decoration: none;
+    padding-left: 20px;
+    color: white;
+    transition: all 0.3s;
+}
+
+#taniti a:hover {
+    color: lightgrey;
+}
+
+.menubar ul {
+    list-style: none;
+    display: flex;
+}
+
+.menubar ul li {
+    padding: 10px 40px;
+    position: relative;
+}
+
+.menubar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16pt;
+
+    transition: all 0.3s;
+}
+
+.menubar ul li a:hover {
+    color: lightgray;
+}
+
+.dropdownmenu {
+    display: none;
+}
+
+.menubar ul li:hover .dropdownmenu {
+    display: block;
+    position: absolute;
+    left: 19px;
+    top: 100%;
+    background-color: darkgoldenrod;
+}
+
+.dropdownmenu ul {
+    display: block;
+    margin: 10px;
+}
+
+.mainimage {
+    height: calc(100vh - 60px);
+    background-image: url(./Main\ Image.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#welcomeh2 {
+    color: white;
+    font-size: 30pt;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+#welcomep {
+    color: white;
+    font-size: 16pt;
+    font-weight: bold;
+    padding-bottom: 40px;
+}
+
+.mainimageblock {
+    position: absolute;
+    width: 40%;
+    background-color: rgba(0, 0, 0, 0.5);
+    left: 10%;
+    top: 30%;
+    padding: 50px;
+}
+
+.mainimageblock a {
+    text-decoration: none;
+    font-size: 16pt;
+    background-color: darkgoldenrod;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    opacity: 100%;
+    transition: all 0.3s;
+}
+
+.mainimageblock a:hover {
+    opacity: 70%;
+}
+
+.islandattractionsheader {
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+    color: darkgoldenrod;
+}
+
+.beachimage{
+    height: calc(100vh - 60px);
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+    background-image: url(./Beach\ Picture.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.beachwords {
+    padding: 50px;
+    margin-left: 5%;
+    margin-top: 30%;
+    margin-right: 40%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.beachwords h2 {
+    padding-bottom: 25px;
+    font-size: 30pt;
+    color: darkgoldenrod;
+}
+
+.beachwords p {
+    font-size: 16pt;
+}
+
+.rainforestimage {
+    height: calc(100vh - 60px);
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+    background-image: url(./Rainforest\ Picture.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.volcanoimage {
+    height: calc(100vh - 60px);
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+    background-image: url(./Volcano\ Picture.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.aboutus {
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.aboutusheader {
+    color: darkgoldenrod;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-bottom: 5%;
+}
+
+.aboutuscontent {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.aboutus img {
+    border-radius: 20px;
+}
+
+.aboutuswords {
+    margin-left: 5%;
+    width: 40%;
+}
+
+.aboutuswords h2 {
+    color: darkgoldenrod;
+    padding-bottom: 8%;
+}
+
+.aboutuswords h1 {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    color: darkgoldenrod;
+}
+
+.aboutuswords p {
+    color: black;
+    font-size: 16pt;
+    padding-bottom: 5%;
+}
+
+.customerreviewsheading {
+    color: darkgoldenrod;
+    text-align: center;
+    background-color: #E8E8E8;
+    padding-top: 5%;
+}
+
+.customerreviews {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    background-color: #E8E8E8;
+}
+
+.review {
+    justify-content: center;
+    width: 20%;
+    background-color: white;
+    padding: 50px;
+    padding-top: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.review h2 {
+    padding-bottom: 15%;
+    padding-top: 10%;
+}
+
+.review p {
+    font-size: 14pt;
+}
+
+.faq {
+    background-color: #E8E8E8;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.faq h1 {
+    color: darkgoldenrod;
+    padding-bottom: 5%;
+}
+
+.faq p {
+    padding: 25px 0;
+    font-size: 14pt;
+}
+
+.faq h2 {
+    color: darkgoldenrod;
+}
+
+footer {
+    background-color: #404040;
+    padding-bottom: 10rem;
+}
+
+.footer-container {
+    width: 100%;
+    height: 20vh;
+    background-color: #404040;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.footer-heading {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-heading a {
+    margin-top: 10%;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    padding: 0 90px;
+}
+
+.footer-heading a:hover {
+    color: darkgoldenrod;
+    transition: 0.3s ease-out;
+}
+
+.footer3 {
+    padding-top: 5px;
+}
+
+.footer3 p {
+    color: white;
+    margin-left: 90px;
+    padding-top: 24px;
+}
+
+.footer4 a{
+    padding-top: 4%;
+}
+
+.footer5 p {
+    color: white;
+    margin-left: 90px;
+    padding-top: 30px;
+}

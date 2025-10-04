@@ -1,0 +1,410 @@
+:root {
+    --midnightblue-color: #003B6D;
+    --skyblue-color: #6699CC;
+    --dimgrey-color: #676767;
+    --silver-color: #BDBDBD;
+}
+
+body {
+    background-color: #F2F2F2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.menubar {
+    background-color: darkgoldenrod;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#taniti a{
+    text-decoration: none;
+    padding-left: 20px;
+    color: white;
+    transition: all 0.3s;
+}
+
+#taniti a:hover {
+    color: lightgrey;
+}
+
+.menubar ul {
+    list-style: none;
+    display: flex;
+}
+
+.menubar ul li {
+    padding: 10px 40px;
+    position: relative;
+}
+
+.menubar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16pt;
+
+    transition: all 0.3s;
+}
+
+.menubar ul li a:hover {
+    color: lightgray;
+}
+
+.dropdownmenu {
+    display: none;
+}
+
+.menubar ul li:hover .dropdownmenu {
+    display: block;
+    position: absolute;
+    left: 19px;
+    top: 100%;
+    background-color: darkgoldenrod;
+}
+
+.dropdownmenu ul {
+    display: block;
+    margin: 10px;
+}
+
+.mainimage {
+    height: calc(100vh - 60px);
+    background-image: url(./Main\ Image\ 2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#welcomeh2 {
+    color: white;
+    font-size: 30pt;
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+
+#welcomep {
+    color: white;
+    font-size: 16pt;
+    font-weight: bold;
+    padding-bottom: 40px;
+}
+
+.mainimageblock {
+    position: absolute;
+    width: 40%;
+    background-color: rgba(0, 0, 0, 0.5);
+    left: 10%;
+    top: 30%;
+    padding: 50px;
+}
+
+.mainimageblock a {
+    text-decoration: none;
+    font-size: 16pt;
+    background-color: darkgoldenrod;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    opacity: 100%;
+    transition: all 0.3s;
+}
+
+.mainimageblock a:hover {
+    opacity: 70%;
+}
+
+.lodging {
+    background-color: #E8E8E8;
+    padding-top: 5%;
+    padding-bottom: 2.5%;
+}
+
+.lodgingheading {
+    margin-left: 10%;
+    margin-bottom: 5%;
+    color: darkgoldenrod; 
+}
+
+.lodgingoption {
+    padding: 25px;
+    background-color: white;
+    border-radius: 25px;
+    border: 2px solid black;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+}
+
+.lodgingoption h2 {
+    color: darkgoldenrod;
+    font-size: 20pt;
+}
+
+.lodgingoption img {
+    width: 500px;
+    height: 400px;
+}
+
+.lodgingdesc {
+    padding-left: 100px;
+}
+
+.lodgingdesc h2 {
+    color: darkgoldenrod;
+    font-size: 20pt;
+}
+
+.lodgingdesc p {
+    font-size: 16pt;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.transportation {
+    background-image: url(./Transportation\ Background\ Image.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+
+.transportationcontent {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.transportationheading {
+    text-align: center;
+    margin-bottom: 5%;
+    padding-top: 2.5%;
+    color: goldenrod;
+}
+.transportationwords {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-bottom: 2.5%;
+}
+
+.transportationwords h2 {
+    color: goldenrod;
+    margin-bottom: 2.5%;
+}
+
+.transportationwords p {
+    font-size: 14pt;
+    margin-bottom: 5%;
+    color: white;
+}
+
+.entertainment {
+    background-color: #E8E8E8;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.entertainment h1 {
+    color: darkgoldenrod;
+    padding-left: 10%;
+}
+
+.entertainmentheading p {
+    padding-left: 10%;
+    padding-top: 3%;
+    padding-right: 10%;
+    font-size: 16pt;
+}
+
+.entertainmentcontent {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5%;
+    font-size: 14pt;
+}
+
+.entertainmentlist {
+    background-color: white;
+    width: 45%;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px;
+}
+
+.entertainmentlist p {
+    font-size: 16pt;
+    padding-top: 8%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.entertainmentlist h2 {
+    text-align: center;
+    color: darkgoldenrod;
+    padding-bottom: 5%;
+}
+
+.entertainmentlist img {
+    width: 100%;
+    height: 40%;
+}
+
+.entertainmentlist2 {
+    background-color: white;
+    width: 45%;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px;
+}
+
+.entertainmentlist2 p {
+    font-size: 16pt;
+    padding-top: 6%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.entertainmentlist2 h2 {
+    text-align: center;
+    color: darkgoldenrod;
+    padding-bottom: 5%;
+}
+
+.entertainmentlist2 img {
+    width: 100%;
+    height: 40%;
+}
+
+.sightseeingheader {
+    color: darkgoldenrod;
+    padding-left: 10%;
+    margin-top: 4%;
+}
+
+.sightseeingcontent {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sightseeingoption {
+    width: 20%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.sightseeingoption img {
+    width: 100%;
+    height: 60%;
+    border-radius: 20px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.sightseeingoption h2 {
+    text-align: center;
+    color: darkgoldenrod;
+}
+
+.sightseeingoption p {
+    font-size: 14pt;
+}
+
+.restaurants {
+    background-color: #E8E8E8;
+    margin-top: 2%;
+    padding-top: 3%;
+    padding-bottom: 5%;
+}
+
+.restaurantheading {
+    color: darkgoldenrod;
+    padding-left: 10%;
+}
+
+.restaurantcontent {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.restaurantimage img{
+    width: 550px;
+    height: 400px;
+}
+
+.restaurantwords1 {
+    padding-top: 5%;
+}
+
+.restaurantwords1 h2 {
+    padding-bottom: 10%;
+}
+
+.restaurantwords1 p {
+    padding-bottom: 10%;
+    font-size: 16pt;
+}
+
+.restaurantwords2 p {
+    font-size: 16pt;
+    padding-bottom: 10%;
+}
+
+.restaurantwords2 h2 {
+    padding-bottom: 10%;
+    padding-top: 10%;
+}
+
+footer {
+    background-color: #404040;
+    padding-bottom: 10rem;
+}
+
+.footer-container {
+    width: 100%;
+    height: 20vh;
+    background-color: #404040;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.footer-heading {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-heading a {
+    margin-top: 10%;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    padding: 0 90px;
+}
+
+.footer-heading a:hover {
+    color: darkgoldenrod;
+    transition: 0.3s ease-out;
+}
+
+.footer3 {
+    padding-top: 5px;
+}
+
+.footer3 p {
+    color: white;
+    margin-left: 90px;
+    padding-top: 24px;
+}
+
+.footer4 a{
+    padding-top: 4%;
+}
+
+.footer5 a {
+    padding-top: 4%;
+}
